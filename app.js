@@ -40,7 +40,8 @@ else {
             $('.weight')[0].innerHTML = `Weight: ${pokemon.weight}`;
             let abilities = "<ul>";
             for (const ability of pokemon.abilities) {
-                abilities += `<li>${ability.name}</li>`;
+                //abilities += `<li>${pokemon.abilities[1].ability.name}</li>`
+                abilities += `<li>${ability.ability.name}</li>`;
             }
             abilities += "</ul>";
             $('.abilities')[0].innerHTML = abilities;
